@@ -1,0 +1,19 @@
+{
+  "name": "themesong",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "afplay": "^1.0.3",
+    "mplayer": "^2.1.0",
+    "play": "^0.5.0",
+    "play-sound": "^1.1.2",
+    "prompt": "^1.0.0",
+    "troubadour": "0.0.5"
+  }
+}
