@@ -11,7 +11,7 @@ var appRouter = function (app) {
     {
       // no: set a new cookie
       app.get("/", function(req, res) {
-        res.sendFile(path.join('C:/Users/Carson/ThemeSong' + '/index.html'));
+        res.sendFile(path.join(__dirname + '/index.html'));
       });
       app.post('/submit-username/', function (req, res, callback) {
         username = req.body.userID;
@@ -29,9 +29,15 @@ var appRouter = function (app) {
       res.send('Welcome' + cookie + '!');
       console.log('cookie exists', cookie);
       if (cookie === "carson"){
-        require('child_process').exec('cmd /c playSongScript.bat', function(){
+        const exec = require('child_process').exec;
+        const playscript = exec('mpg123 /home/pi/Desktop/ThemeSong/routes/seinfeld.mp3');
           // …you callback code may run here…
-        });
+	  playscript.stdout.on('data', function(data){
+	    console.log(data);
+	  });
+	  playscript.stderr.on('data', function(data){
+	    console.log(data);
+          });
       }
     } 
     next(); // <-- important!   
