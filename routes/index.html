@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Sample Site</title>
+    <title>ThemeSong Registration</title>
 
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
     <style>
@@ -11,8 +11,10 @@
 </head>
 <body>
     <font size="36">
-    <form action="/submit-username/" method="post">
+    <form id="form" action="/submit-username/" method="post">
         UserID: <input name="userID" type="text" /> <br />
+        Youtube Song URL (w/ Timestamp) <input name="youtube_url" type="text" /> <br />
+        Length of Time to Play (seconds): <input name="length_to_play" type="text" /> <br />
         <input type="submit">
     </form>
     </font>

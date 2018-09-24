@@ -1,15 +1,32 @@
-{
-    "name": "Song Selection",
-    "song": [
-        {
-            "User": "Carson",
-            "Song Title": "Everybody (Backstreet's Back) - Radio Edit",
-            "Artist": "Backstreet Boys"
-        },
-        {
-            "User": "TJ",
-            "Song Title": "I Love it (& Lil Pump)",
-            "Artist": "Backstreet Boys"
-        }
-    ]
-}
+[
+  {
+    "userid": "default",
+    "youtube_url": "https://www.youtube.com/watch?v=_V2sBURgUBI",
+    "length_to_play": "60"
+  },
+  {
+    "userid": "carson",
+    "youtube_url": "https://www.youtube.com/watch?v=RRKJiM9Njr8",
+    "length_to_play": "180"
+  },
+  {
+    "userid": "tj",
+    "youtube_url": "https://www.youtube.com/watch?v=J9FImc2LOr8",
+    "length_to_play": "150"
+  },
+  {
+    "userid": "sony",
+    "youtube_url": "https://youtu.be/vx2u5uUu3DE?t=25s",
+    "length_to_play": "120"
+  },
+  {
+    "userid": "lanna",
+    "youtube_url": "https://youtu.be/0t0fZeySNck?t=19s",
+    "length_to_play": "90"
+  },
+  {
+    "userid": "gross",
+    "youtube_url": "https://www.youtube.com/watch?v=A47KCqP5f6o",
+    "length_to_play": "45"
+  }
+]
