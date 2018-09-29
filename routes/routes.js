@@ -50,18 +50,18 @@ var appRouter = function (app) {
         user_timeout = obj[obj.length - 1].length_to_play;
       }
 	    console.log(script_string);
-      var exec = require('child_process').exec;
-      var playscript = exec(script_string);
+      const exec = require('child_process').exec;
+      const playscript = exec(script_string);
           // …you callback code may run here…
       playscript.stdout.on('data', function(data){
-        console.log(data);
-      });
-      playscript.stderr.on('data', function(data){
-        console.log(data);
-      });
-      setTimeout(function(){
-        var killscript = exec(path.join(__dirname + "/kill_chrome.sh "));
-      }, user_timeout);
+         console.log(data);
+       });
+       playscript.stderr.on('data', function(data){
+         console.log(data);
+       });
+      setTimeout(() => {
+        const killscript = exec(path.join(__dirname + "/kill_chrome.sh "));
+      }, user_timeout * 1000); 
    }  
     next(); // <-- important! 
   });

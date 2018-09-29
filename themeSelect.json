@@ -6,7 +6,7 @@
   },
   {
     "userid": "carson",
-    "youtube_url": "https://www.youtube.com/watch?v=RRKJiM9Njr8",
+    "youtube_url": "https://youtu.be/6M6samPEMpM?t=1m28s",
     "length_to_play": "180"
   },
   {
@@ -28,5 +28,10 @@
     "userid": "gross",
     "youtube_url": "https://www.youtube.com/watch?v=A47KCqP5f6o",
     "length_to_play": "45"
+  },
+  {
+    "userid": "ye",
+    "youtube_url": "https://www.youtube.com/watch?v=Ag1o3koTLWM",
+    "length_to_play": "65"
   }
 ]
